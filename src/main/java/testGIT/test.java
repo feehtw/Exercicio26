@@ -1,15 +1,18 @@
 
 
 package testGIT;
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 public class test {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int qntd = 20;
+   
+        String nomes[] = new String[3];
+        nomes[0] = "Unisul";
+        nomes[1] = "Aluno";
+        nomes[2] = "Sistema";
         
-        for (int i = 0; i < qntd; i++) {
-            System.out.println("teste " + i);
+        for (int i = 0; i < 3; i++) {
+            JOptionPane.showMessageDialog(null, "o nome na posição " + i + " é " + nomes[i]);
         }
         
         
